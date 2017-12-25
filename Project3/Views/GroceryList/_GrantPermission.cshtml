@@ -1,0 +1,22 @@
+@model GrantPermissionVM
+
+    <form id="grantPermissionForm" asp-action="GrantPermission" asp-controller="GroceryList">
+        <div class="form-group">
+            <select class="form-control" asp-for="SelectedUserId">
+                @foreach (var user in Model.Users)
+                {
+                    <option value="@user.Id">@user.Username</option>}
+            </select>
+        </div>
+
+        <input type="hidden" asp-for="ListId" value="@Model.ListId"/>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" id="submitGrantAccessButton">Save</button>
+            <button class="btn btn-default" id="cancelButton">Cancel</button>
+        </div>
+
+    </form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

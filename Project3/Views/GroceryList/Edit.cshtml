@@ -1,0 +1,66 @@
+@model GroceryListVM
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit @Model.Name</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" name="Id" value="@Model.Id"/>
+        <div class="form-group">
+            <label asp-for="Name" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Update" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<button id="addGroceryItem" class="btn btn-primary btn-sm">Add New Grocery Item</button><div id="addGrocery">
+    @Html.Partial("_addGrocery", new CreateGroceryItemVM { GroceryListId = Model.Id})
+</div>
+
+<table class="table"  style="margin-top: 10px">
+    <tbody>
+        @foreach (var item in Model.Groceries)
+        {
+            <tr>
+                <td>
+                    <form asp-action="RemoveGrocery" asp-controller="GroceryList" class="remove">
+                        <div class="form-horizontal">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <input type="hidden" name="listId" value="@Model.Id" />
+                            <button type="submit" class="btn btn-default">Remove</button>
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GroceryName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GroceryAmount)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="Index">Back to All Lists</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/js/createGroceryItem.js"></script>
+}

@@ -1,0 +1,22 @@
+C:\Users\student\Desktop\Project3\Project3\bin\Debug\netcoreapp1.1\Project3.deps.json
+C:\Users\student\Desktop\Project3\Project3\bin\Debug\netcoreapp1.1\Project3.runtimeconfig.json
+C:\Users\student\Desktop\Project3\Project3\bin\Debug\netcoreapp1.1\Project3.runtimeconfig.dev.json
+C:\Users\student\Desktop\Project3\Project3\bin\Debug\netcoreapp1.1\Project3.dll
+C:\Users\student\Desktop\Project3\Project3\bin\Debug\netcoreapp1.1\Project3.pdb
+C:\Users\student\Desktop\Project3\Project3\obj\Debug\netcoreapp1.1\Project3.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Project3\Project3\obj\Debug\netcoreapp1.1\Project3.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\Project3\Project3\obj\Debug\netcoreapp1.1\Project3.AssemblyInfo.cs
+C:\Users\student\Desktop\Project3\Project3\obj\Debug\netcoreapp1.1\Project3.dll
+C:\Users\student\Desktop\Project3\Project3\obj\Debug\netcoreapp1.1\Project3.pdb
+C:\Users\student\Desktop\Project3\Project3\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+E:\Advanced Web\Project3\Project3\bin\Debug\netcoreapp1.1\Project3.deps.json
+E:\Advanced Web\Project3\Project3\bin\Debug\netcoreapp1.1\Project3.runtimeconfig.json
+E:\Advanced Web\Project3\Project3\bin\Debug\netcoreapp1.1\Project3.runtimeconfig.dev.json
+E:\Advanced Web\Project3\Project3\bin\Debug\netcoreapp1.1\Project3.dll
+E:\Advanced Web\Project3\Project3\bin\Debug\netcoreapp1.1\Project3.pdb
+E:\Advanced Web\Project3\Project3\obj\Debug\netcoreapp1.1\Project3.csprojResolveAssemblyReference.cache
+E:\Advanced Web\Project3\Project3\obj\Debug\netcoreapp1.1\Project3.csproj.CoreCompileInputs.cache
+E:\Advanced Web\Project3\Project3\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+E:\Advanced Web\Project3\Project3\obj\Debug\netcoreapp1.1\Project3.AssemblyInfo.cs
+E:\Advanced Web\Project3\Project3\obj\Debug\netcoreapp1.1\Project3.dll
+E:\Advanced Web\Project3\Project3\obj\Debug\netcoreapp1.1\Project3.pdb

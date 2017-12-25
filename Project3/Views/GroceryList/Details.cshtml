@@ -1,0 +1,48 @@
+@model GroceryListVM
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details for: @Model.Name</h2>
+
+<table class="table col-sm-1">
+    <tbody>
+        @foreach (var item in Model.Groceries)
+        {
+            <tr>
+                <td>
+                    <form asp-action="CheckOffItem" asp-controller="GroceryList" class="checkOff">
+                        <div class="form-horizontal">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <input type="hidden" name="listId" value="@Model.Id" />
+                            @if (item.IsCheckedOff)
+                            {
+                                <input type="checkbox" checked class="box"/>
+                            }
+                            else
+                            {
+                                <input type="checkbox" class="box"/>
+                            }
+
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GroceryName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GroceryAmount)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    @Html.ActionLink("Refresh", "Details", Model)<span> | </span>
+    <a asp-action="Index">Back to Home</a>
+</div>
+
+@section Scripts {
+    <script src="~/js/ListDetails.js"></script>
+}
